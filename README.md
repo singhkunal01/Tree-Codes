@@ -5,5 +5,5 @@ In this repo i am adding my daily progress while learning TREES .
 
 **Reference** : [GFG](https://www.geeksforgeeks.org/)
 
-**_All Codes_** : [Click Me,If You want Them](https://github.com/singhkunal01/Code-Of-Trees-Data-Structure.git):see_no_evil:
+**_All Codes_** : [Click Me,If You want Them](https://github.com/singhkunal01/Code-Of-Trees-Data-Structure.git) :point_left:
 
