@@ -12,14 +12,14 @@ because if any of the root has BALANCE FACTOR >1 it is not the balanced tree but
 int checkHeight(Node *root)
 {
     if(root == NULL) return 0;
-    int leftSubtreeHeight = height(root->left);
-    int rightSubtreeHeight = height(root->right);
+    int leftSubtreeHeight = checkHeight(root->left);
+    int rightSubtreeHeight = checkHeight(root->right);
     if(leftSubtreeHeight == -1 or rightSubtreeHeight == -1) return -1;
     if(abs(leftSubtreeHeight - rightSubtreeHeight) > 1) return -1;
     return max(leftSubtreeHeight, rightSubtreeHeight) + 1; //height of (left+right) subtree + 1(for root)
 }
 bool isBalanced(Node *root){
-    if( height(root)!=-1) return true;
+    if( checkHeight(root)!=-1) return true;
 else return false;
 }
 
