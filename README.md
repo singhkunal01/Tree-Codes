@@ -11,10 +11,10 @@ In this repo i am adding my daily progress while learning TREES . </h2>
 #### <img src="https://camo.githubusercontent.com/96962292f556ebe0bc5467f9fc983cd8776afd815d717417e4c547120168ae6c/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4a714379523832744849595147526a4c4f592f67697068792e676966" alt="GFG icon" height="45px" width="45px" > WANNA ASK SOMETHING : [```MY TELEGRAM```](https://t.me/unknown_01001)
  
 
-### TO BE CONTINUED ...... :hourglass:
+### TO BE CONTINUED ...... 
 
 
-> ### ALL THE BEST :rainbow: :rainbow:
+> ### ALL THE BEST ......
 
 
 ![TREES](https://www.upgrad.com/blog/wp-content/uploads/2020/09/Picture1-1.jpg)
