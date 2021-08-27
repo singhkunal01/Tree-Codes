@@ -1,14 +1,14 @@
 int maxHeight(Node *root, int &maxOfTheMax) {
     if(root == NULL) return 0;
-    // these two cannot handle the case for values having value<0;
+    // these two cannot handle the case for values having value < 0;
     /* int lh = maxHeight(root->left,maxOfTheMax);
      int rh = maxHeight(root->right,maxOfTheMax);*/
   
-    /*  if there is a node having value which is negative than always return 0 and ignore that path
+    /*  if there is a node having value which is negative then always return 0 and ignore that path
         so for handling that case instead of two above lines we can add these two lines -*/
     int lh = max( 0, maxHeight(root->left, maxOfTheMax));
     int rh =  max( 0, maxHeight(root->right, maxOfTheMax));
-    maxOfTheMax = max(maxOfTheMax, root->val + lh + rh);
+    maxOfTheMax = max(maxOfTheMax, root->val + lh + rh);  //backtracking step ( KING OF THE PROBLEM )
     return root->val + max(lh , rh);
 }
 
