@@ -12,3 +12,6 @@ In this repo i am adding my daily progress while learning TREES .
 ### TO BE CONTINUED ......
 
 > ### ALL THE BEST
+
+
+![TREES](https://www.upgrad.com/blog/wp-content/uploads/2020/09/Picture1-1.jpg)
