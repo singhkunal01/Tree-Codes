@@ -72,7 +72,7 @@ THIS CAN BE DONE VIA A SIMPLE CHECK =============  flag = !flag */
          for(int i = 0; i < sz; i++) {
              TreeNode *eachNode = bucket.front();
              bucket.pop();
-             int idx = (flag == false) ? i:(size - 1 - i ); 
+             int idx = (flag == false) ? i:(sz - 1 - i ); 
 // THIS ABOVE LINE (75) IS THE MAIN LOGIC WHICH MEANS IF THE FLAG IS FALSE THEN DO NOT MAKE ANY CHANGE IN THE FINAL VECTOR AND INSERT IT FROM LEFT TO RIGHT OTHERWISE INSERT IT FROM RIGHT TO LEFT IN REVERSE ORDER i.e., size - 1 - i ;
              everyLevel[idx]=eachNode -> val;
              if(eachNode->left != NULL) bucket.push(eachNode->left);
