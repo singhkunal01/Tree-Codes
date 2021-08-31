@@ -21,7 +21,7 @@ vector<int> topViewOfBinaryTree(Node *root , vector<int>&result){
       int vertical = valuesOfQueue.second;
       /*but we have to notice one thing here that if the key i.e., vertical value is don't exist only when we have to insert these values into map otherwise no need to insert them
       simply if we can say then the conclusion is map contains only distinct(unique) keys i.e., verticals*/
-      if(bucket.find(vertical) != bucket.end()) bucket[vertical] = tempNode->val;
+      if(bucket.find(vertical) == bucket.end()) bucket[vertical] = tempNode->val;
       if(tempNode->left) ds.push({tempNode->left, vertical - 1});
       if(tempNode->right) ds.push({tempNode->right, vertical + 1});
   }
