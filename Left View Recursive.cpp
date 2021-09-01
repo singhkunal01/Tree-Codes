@@ -5,7 +5,7 @@ void helperFunc(TreeNode *root,int level,vector<int> &ans){
         helperFunc(root->right,level+1,ans);
 
 }
-vector<int> rightSideView(TreeNode* root) {
+vector<int> leftSideView(TreeNode* root) {
         vector<int> res;
         helperFunc(root,0,res);
         return res;
