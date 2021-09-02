@@ -9,12 +9,13 @@ bool givePath(Node *root,int tillThisNode,vector<int> &res){
   res.push_back(root->val);
   
   if(root->val==tillThisNode) 
-    return true; //if the value we want to find is find till here then no need to search further and hence return true;
+    return true; //if the value we want to find is FOUND till here then no need to search further and hence return true;
   
   if(givePath(root->left,tillThisNode,res) or givePath(root->right,tillThisNode,res)) 
-    return true; //if value is not find directly then go left and right and search there if it found at any of the node then return true ;
+    return true; //if value is not FOUND directly then go left and right and search there if it is found at any of the node then return true ;
   
-  res.pop_back(); //else start moving back and pop the values you pushed unwantedly
+  res.pop_back(); /* else start moving back and pop the values you pushed unwantedly 
+  and this is also called backtracking (IN STRIVER BHAIYA'S LANGUAGE : PEN TODHA HAI TO JODNA BHI TO PADHEGA NA :-) */
   return false;
 }
 
