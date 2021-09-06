@@ -28,3 +28,39 @@ while(!ds.empty())
 
 // TC: O(N) + O(logN)== O(logN) for insertion of multiset (ignore it)
 // SC: O(N) + O(3N)
+
+
+
+// WITHOUT USING COMPLICATED MAP IN MAP JUST USE LIST INSTEAD OF THAT..
+//at gfg: https://practice.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1#
+class Solution
+{
+    public:
+    //Function to find the vertical order traversal of Binary Tree.
+    vector<int> verticalOrder(Node *root)
+    {
+    //   vector<vector<int>> ans;
+    vector<int> res;
+  if(!root) return res;
+  queue<pair<Node*,int>> ds;
+  map<int,list<int>> bucket;
+  ds.push({root,0});
+while(!ds.empty())
+{
+    auto qu = ds.front();
+    ds.pop();
+    Node *temp = qu.first;
+    int vertical = qu.second;
+    bucket[vertical].push_back(temp->val);
+    if(temp->left) ds.push({temp->left, vertical - 1});
+    if(temp->right) ds.push({temp->right, vertical + 1});
+}
+  for(auto &x:bucket){
+      list<int> temp = x.second;
+    for(auto &y:temp){
+      res.push_back(y);
+    }
+  }
+  return res;
+    }
+};
