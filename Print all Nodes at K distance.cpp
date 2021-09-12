@@ -2,18 +2,18 @@ void findParent(TreeNode*root, unordered_map<TreeNode*, TreeNode*> &parents, Tre
     queue<TreeNode*> ds({root});
     while(!ds.empty()) {
         TreeNode* temp = ds.front(); ds.pop();
-        if(temp->left){
+        if(temp->left){ // if the particular node has left then it moves towards left and point its root as its parent node
             parents[temp->left]=temp;
-            ds.push(temp->left);
+            ds.push(temp->left); //continue move towards left ...
         }
-           if(temp->right){
+           if(temp->right){  // if the particular node has right then it moves towards right and point its root as its parent node
             parents[temp->right]=temp;
-            ds.push(temp->right);
+            ds.push(temp->right); //continue move towards right ...
         }
     }
 }
         vector<int> distanceK(TreeNode *root, TreeNode *target, int k) {
-    unordered_map<TreeNode *, TreeNode *> parentsCheck;
+    unordered_map<TreeNode *, TreeNode *> parentsCheck; //to keep track the nodes and their parents
     findParent(root, parentsCheck, target);
     unordered_map<TreeNode *, bool> visited;
     queue<TreeNode *> ds({target});
