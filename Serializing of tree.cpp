@@ -13,5 +13,19 @@
         }
     }
     return st;
+}
 
-//using preorder traversal
+//using iterative preorder traversal
+    string st = "";
+    if(!root) return st;
+    stack<Node *> ds({root});
+    while(!ds.empty()){
+        Node *currNode = ds.top();
+        ds.pop();
+        if(!currNode) st += "*,";
+        else st += to_string(currNode->val) + ',';
+        if(currNode){
+            ds.push(currNode->right);
+            ds.push(currNode->left);
+        }
+    }
