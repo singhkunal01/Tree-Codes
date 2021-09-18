@@ -1,8 +1,12 @@
-// ---------------------------- F I R S T   A P P R O A C H ------------------
+// ---------------------------- F I R S T   A P P R O A C H -------------------------------------
 
 // TC: O(logn)
 // SC:O(1)
-  
+
+
+/* NOTE: This approach can fail (may be) sometimes but the test cases on which i have tested are passed so please help me to send some cases on which it fails 
+so that i can check whether this solution is right or not . */
+
 int ceilOfBST(Node *root,int key){
     int ceil = -1;
     while(root){
