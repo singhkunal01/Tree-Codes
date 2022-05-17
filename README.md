@@ -22,4 +22,6 @@ This Repo Contains my all Codes of **Trees Data Structures** (Problems + Concept
 <h3 align="center"> TREES  </h3> <br>
 
 <p align="center"> <img justify-content="center" src="https://www.upgrad.com/blog/wp-content/uploads/2020/09/Picture1-1.jpg" > </p>
+<p align="center"> <strong> Traversals Of Binary Tree </strong> <img justify-content="center" src="traversals.png" > </p>
+
 
